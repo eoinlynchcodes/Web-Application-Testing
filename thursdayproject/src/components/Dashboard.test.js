@@ -7,6 +7,7 @@ it('Renders the Dashboard component without crashing', () => {
     render(<Dashboard/>);
 })
 
+expect(5).toBe(5);
 
 
-expect(functions.onFoul)
+
