@@ -4,16 +4,35 @@ export default class Dashboard extends React.Component{
     constructor(){
         super();
         this.state = {
-            balls: null,
-            strikes: '',
+            balls: 0,
+            strikes: 0,
         }
     }
 
-    onStrike = (event) => {        
+    onStrike = (event) => {    
+        this.setState({
+            strikes: this.state.strikes + 1
+        }); 
+        console.log(this.state.strikes);
+        if(this.state.strikes === 3){
+            this.setState({
+                strikes: this.state.strikes = 0
+            });
+            console.log(this.state.strikes);
+        }
     }
 
     onBall = (event) => {
-        console.log('Ball');
+        this.setState({
+            balls: this.state.balls + 1
+        });
+        console.log(this.state.balls);
+        if(this.state.balls === 4){
+            this.setState({
+                balls: this.state.balls = 0
+            });
+            console.log(this.state.balls);
+        }
     }
 
     onFoul = (event) => {
