@@ -16,7 +16,6 @@ export default class Display extends React.Component{
         return(
             <div>
                 <div>
-
                     <h1>Balls: {this.props.balls}</h1>
                 </div>
 
