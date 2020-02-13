@@ -46,9 +46,7 @@ export default class Dashboard extends React.Component{
         return(
             <div>
                 <button onClick={this.onStrike}>Strike</button>
-                <h1> {this.state.strikes} </h1>
                 <button onClick={this.onBall}>Ball</button>
-                <h1> {this.state.balls}</h1>
                 <button onClick={this.onFoul}>Foul</button>
                 <button onClick={this.onHit}>Hit</button>
         

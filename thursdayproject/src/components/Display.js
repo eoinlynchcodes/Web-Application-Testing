@@ -16,11 +16,12 @@ export default class Display extends React.Component{
         return(
             <div>
                 <div>
-                    <h1>{this.props.balls}</h1>
+
+                    <h1>Balls: {this.props.balls}</h1>
                 </div>
 
                 <div>
-                    <h1> {this.props.strikes}</h1>
+                    <h1>Strikes: {this.props.strikes}</h1>
                 </div>
             </div>
         )
